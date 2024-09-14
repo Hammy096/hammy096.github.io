@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated with the latest tech news.">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tech News</title>
+</head>
+<body>
+    <header>
+        <h1>Tech News</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">CPU</a></li>
+                <li><a href="#">GPU</a></li>
+                <li><a href="#">Gaming</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main id="news-container">
+            <article>
+                <h2>New GPU Released</h2>
+                <div class="article-content">
+                    <figure class="image-container">
+                        <img src="./images/rtx4090.jpg" alt="Nvidia RTX 4090 Graphics Card">
+                        <figcaption>Nvidia RTX 4090 Graphics Card</figcaption>
+                    </figure>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem elementum magnis magna, risus aptent accumsan dictum fermentum. Ex urna urna pellentesque tempus natoque lacus. Inceptos gravida volutpat gravida natoque fusce mauris maximus.</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h2>CPU Market Trends</h2>
+                <div class="article-content">
+                    <figure class="image-container">
+                        <img src="./images/amd_ryzen5.jpg" alt="AMD Unveils Next-Gen Zen 5 Processors">
+                        <figcaption>AMD Unveils Next-Gen Zen 5 Processors</figcaption>
+                    </figure>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem elementum magnis magna, risus aptent accumsan dictum fermentum. Ex urna urna pellentesque tempus natoque lacus. Inceptos gravida volutpat gravida natoque fusce mauris maximus.</p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h2>Top Gaming Laptops</h2>
+                <div class="article-content">
+                    <figure class="image-container">
+                        <img src="./images/gamingLaptop.jpg" alt="Razer Blade 16 Laptop">
+                        <figcaption>Razer Blade 16 Laptop</figcaption>
+                    </figure>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem elementum magnis magna, risus aptent accumsan dictum fermentum. Ex urna urna pellentesque tempus natoque lacus. Inceptos gravida volutpat gravida natoque fusce mauris maximus.</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <div class="toggle-container">
+            <button id="toggle-aside">Show/Hide Trending Topics</button>
+        </div>
+
+        <aside id="aside">
+            <h2>Trending Topics</h2>
+            <ul>
+                <li><a href="#">New Upcoming Games</a></li>
+                <li><a href="#">Must-Have Gaming Laptop</a></li>
+                <li><a href="#">Cheapest PC Build</a></li>
+                <li><a href="#">iPhone 16 Review</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Tech News</p>
+        <a href="mailto:info@technews.com" class="no-visited-link">Email us</a>
+    </footer>
+
+    <script>
+        document.getElementById('toggle-aside').addEventListener('click', function() {
+            const asideElement = document.getElementById('aside');
+            if (asideElement.style.display === 'block') {
+                asideElement.style.display = 'none';
+            } else {
+                asideElement.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
